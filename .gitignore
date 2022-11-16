@@ -1,0 +1,17 @@
+# Intellij
+.idea/
+*.iml
+*.iws
+
+# Maven
+log/
+target/
+
+# Reports
+test-output/
+reports/
+#test-results**/ -->commenting intentionally for the purpose of showcasing sample reports
+test-output-thread/
+
+#Screenshots Folder
+screenshots/
