@@ -2,6 +2,7 @@ package com.selenium.qa.stepDefinitions;
 
 import com.selenium.qa.factory.DriverFactory;
 import com.selenium.qa.pages.HomePage;
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -43,5 +44,10 @@ public class HomePageSteps {
     @Then("Homepage language should successfully change to Nederland")
     public void languageIsChanged() {
         Assert.assertEquals(homePage.getLanguageSelectedValue(), "Nederlands", "Homepage is not changed to Dutch");
+    }
+
+    @And("I navigated to login page")
+    public void navigatedToLoginPage() {
+        homePage.navigateToLoginPage();
     }
 }

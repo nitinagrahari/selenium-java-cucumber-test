@@ -1,6 +1,7 @@
 package com.selenium.qa.pages;
 
 import com.selenium.qa.factory.DriverFactory;
+import com.selenium.qa.util.Helper;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
@@ -35,16 +36,18 @@ public class TrackShipmentPage {
     private List<WebElement> trackingTextBox;
 
     private HomePage homePage = new HomePage(DriverFactory.driver);
+    private Helper helper =new Helper();
 
     // constructor with PageFactory to initiate all the page objects
     public TrackShipmentPage(WebDriver driver) {
         PageFactory.initElements(driver, this);
     }
 
+
+
     // verifying track section is displayed
     public boolean isTrackSectionDisplay() {
-        homePage.clickOnHomePageTabs("Track");
-        return trackingNumber.isDisplayed();
+        return helper.waitForElementToBeVisible(trackButton);
     }
 
     // track shipment option is displayed from the grid menu of home page
@@ -57,7 +60,9 @@ public class TrackShipmentPage {
     public void trackShipment(int trackingID) {
         trackingNumber.sendKeys(Integer.toString(trackingID));
         trackButton.sendKeys(Keys.TAB);
-        trackButton.click();
+        if (helper.waitForElementToBeClickable(trackButton)){
+            trackButton.click();
+        }
     }
 
     // tracking shipment from top Grid menu of home page
@@ -77,12 +82,6 @@ public class TrackShipmentPage {
         trackIds.get(2).click();
         trackIds.get(2).sendKeys(Integer.toString(trackingIds.get(2)));
         btnMultiTrack.click();
-    }
-
-    // track shipment from grid menu of homepage
-    public void trackShipmentFromGridMenuOptionsAtHomePage(int trackingID) {
-        trackingNumberTextBoxGridMenu.sendKeys(Integer.toString(trackingID));
-        trackButton.click();
     }
 
     // capturing error message when tracking shipment with invalid tracking id

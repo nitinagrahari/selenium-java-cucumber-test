@@ -68,9 +68,6 @@ public class LoginPage {
     }
 
     public boolean isResetPasswordMethodPageDisplayed() {
-        if (helper.waitForElementToBeVisible(refreshPageWarning)) {
-            DriverFactory.driver.navigate().refresh();
-        }
         return helper.waitForElementToBeVisible(pwdResetMethodsTitle);
     }
 

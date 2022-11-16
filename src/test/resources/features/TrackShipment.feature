@@ -15,7 +15,7 @@ Feature: Track Shipment Feature
         | 98745612 |
         | 123456 |
         | 7654321 |
-      Then I can see error message <error message> for multiple invalid tracking numbers
+      Then I can see error message "<error message>" for multiple invalid tracking numbers
       Examples:
         | error message |
         | No information for the following shipments/FedEx Office orders has been received by our system yet |

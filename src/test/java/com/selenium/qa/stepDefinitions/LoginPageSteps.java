@@ -15,7 +15,6 @@ public class LoginPageSteps {
 
     @Then("Application Login Page is displayed")
     public void applicationLoginPageIsDisplayed() {
-        homePage.navigateToLoginPage();
         Assert.assertTrue(loginPage.isLoginPageDisplayed(), "Login page is not displayed");
     }
 

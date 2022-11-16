@@ -8,5 +8,5 @@ Feature: Rate and Transit Feature
 
     Examples:
     | from | to | packaging | no.of packages | weight per package |
-    | Hoofddorp,2132DD,Netherlands | Arnhem,6827AS,Netherlands | FedEx Box | 1 | 10 |
+    | Amersfoort,3811BZ,Netherlands | Arnhem,6827AS,Netherlands | FedEx Box | 1 | 10 |
     | Arnhem,6827AS,Netherlands | Hoofddorp,2132DD,Netherlands | FedEx Box | 1 | 10 |
