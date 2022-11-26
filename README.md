@@ -3,6 +3,8 @@
 Hi everyone, my name is Nitin Agrahari. I am having 8+ years of experience in software testing.
 I have worked as both Manual and Automation Tester.
 I have experience with various test automation tools/frameworks like Cypress, Protractor, Cypress, UFT, Selenium Webdriver, Rest-Assured, etc. Also, having hands-on experience in API testing.
+
+ 
 **FedEx experience:** I have worked in multiple projects in FedEx, mainly on TNT and FedEx Integration side. I was Test Lead in LineHaul Art and primarily testing ROCS application, both Legacy and modernisation.
 
 
