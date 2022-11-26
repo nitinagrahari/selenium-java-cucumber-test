@@ -13,7 +13,7 @@ I have experience with various test automation tools/frameworks like Cypress, Pr
 
 2. **Test scenarios covered:**
 
-![img.png](img.png)![img_1.png](img_1.png)
+![img.png](images/img.png)![img_1.png](images/img_1.png)
 
 
 3. **Key highlights of the framework :**
@@ -64,8 +64,8 @@ Step to reproduce:
 
 #Sample Reports:
 
-![img_5.png](img_5.png)
+![img_5.png](images/img_5.png)
 
-![img_4.png](img_4.png)
+![img_4.png](images/img_4.png)
 
 <<Images will be deleted after the assignment review>>
